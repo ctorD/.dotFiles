@@ -30,14 +30,10 @@ scoop install main/mingw
 
 Generate SSH key, start ssh-agent, and configure Git:
 ```
-ssh-keygen -t rsa -b 4096
-Start-Service ssh-agent
-ssh-add $env:USERPROFILE\.ssh\id_rsa
 
 git config --global user.name "Your Name"
 git config --global user.email "youremail@example.com"
 
-Get-Content $env:USERPROFILE\.ssh\id_rsa.pub
 ```
 
 (Copy the output to your GitHub SSH keys.)
@@ -46,7 +42,7 @@ Get-Content $env:USERPROFILE\.ssh\id_rsa.pub
 
 ```powershell
 scoop install main/chezmoi
-chezmoi init --apply git@github.com:yourusername/.dotfiles.git
+chezmoi init --apply https://github.com/ctorD/.dotFiles.git
 ```
 
 ### 4. Add Scoop Buckets
@@ -57,7 +53,15 @@ scoop bucket add nerd-fonts
 ```
 ### 5. Install Applications & Dev Tools
 ```powershell
+scoop install nerd-fonts/JetBrains-Mono
+scoop install main/starship
+scoop install extras/obsidian
 scoop install extras/jetbrains-toolbox
+scoop install extras/chrome
+scoop install extras/glazewm
+scoop install extras/flow-launcher
+scoop install extras/twinkle-tray
+scoop install extras/spotify
 scoop install extras/wezterm
 scoop install main/dotnet-sdk
 scoop install main/nvm
