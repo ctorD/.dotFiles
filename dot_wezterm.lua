@@ -4,12 +4,13 @@ local wezterm = require 'wezterm'
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
-config.default_prog = { "pwsh.exe" }
+config.default_prog = { "pwsh.exe", "-NoLogo" }
 -- This is where you actually apply your config choices.
 
 -- For example, changing the initial geometry for new windows:
+-- TODO: Calculate Rows/Cols for screen
 config.initial_cols = 120
-config.initial_rows = 28
+config.initial_rows = 60
 
 -- or, changing the font size and color scheme.
 config.font_size = 10
