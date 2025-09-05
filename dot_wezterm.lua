@@ -16,4 +16,6 @@ config.font_size = 10
 config.color_scheme = 'catppuccin-macchiato'
 config.font = wezterm.font 'JetBrains Mono'
 -- Finally, return the configuration to wezterm:
+config.hide_tab_bar_if_only_one_tab = true
+config.window_background_opacity = 0.93
 return config
