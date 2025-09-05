@@ -76,6 +76,7 @@ scoop install main/gitextensions
 scoop install main/ripgrep
 scoop install ffmpeg 7zip jq poppler fd fzf zoxide resvg imagemagick
 scoop install yazi
+scoop install oh-my-posh
 ```
 ### 6. Setup Node.js and Quasar CLI (via nvm)
 ```powershell
