@@ -8,4 +8,4 @@ function y {
     Remove-Item -Path $tmp
 }
 
-oh-my-posh init pwsh | Invoke-Expression
+oh-my-posh init pwsh --config ~/.config/oh-my-posh-config.json | Invoke-Expression
