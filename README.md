@@ -16,6 +16,11 @@ Managed by [chezmoi](https://github.com/twpayne/chezmoi)
 
 ## 🚀 Install Guide
 
+### Install Powershell
+```
+winget install --id Microsoft.PowerShell --source winget
+```
+
 ### 1. Install Scoop, Git, and MinGW (via PowerShell)
 
 Open PowerShell as Administrator and run:
@@ -69,6 +74,8 @@ scoop install main/lazygit
 scoop install extras/vscode
 scoop install main/gitextensions
 scoop install main/ripgrep
+scoop install ffmpeg 7zip jq poppler fd fzf zoxide resvg imagemagick
+scoop install yazi
 ```
 ### 6. Setup Node.js and Quasar CLI (via nvm)
 ```powershell
