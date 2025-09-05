@@ -7,3 +7,5 @@ function y {
     }
     Remove-Item -Path $tmp
 }
+
+oh-my-posh init pwsh | Invoke-Expression
