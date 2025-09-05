@@ -58,6 +58,7 @@ scoop bucket add nerd-fonts
 ```
 ### 5. Install Applications & Dev Tools
 ```powershell
+scoop install JetBrainsMono-NF
 scoop install nerd-fonts/JetBrains-Mono
 scoop install main/starship
 scoop install extras/obsidian
