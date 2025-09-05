@@ -16,6 +16,11 @@ Managed by [chezmoi](https://github.com/twpayne/chezmoi)
 
 ## 🚀 Install Guide
 
+### Install Powershell
+```
+winget install --id Microsoft.PowerShell --source winget
+```
+
 ### 1. Install Scoop, Git, and MinGW (via PowerShell)
 
 Open PowerShell as Administrator and run:
