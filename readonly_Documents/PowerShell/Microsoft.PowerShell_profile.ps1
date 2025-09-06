@@ -7,8 +7,4 @@ function y {
     }
     Remove-Item -Path $tmp
 }
-# Only import if not already loaded
-if (-not (Get-Module Terminal-Icons)) {
-    Import-Module Terminal-Icons
-}
-oh-my-posh init pwsh --config ~/.config/oh-my-posh-config.json | Invoke-Expression
+Invoke-Expression (&starship init powershell)
