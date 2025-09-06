@@ -16,9 +16,11 @@ Managed by [chezmoi](https://github.com/twpayne/chezmoi)
 
 ## 🚀 Install Guide
 
-### Install Powershell
+### Install Powershell, Add Powershell terminal icons
 ```
 winget install --id Microsoft.PowerShell --source winget
+Install-Module -Name Terminal-Icons -Repository PSGallery -Force
+Import-Module Terminal-Icons
 ```
 
 ### 1. Install Scoop, Git, and MinGW (via PowerShell)
