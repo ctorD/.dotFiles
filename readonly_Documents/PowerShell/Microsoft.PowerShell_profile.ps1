@@ -7,4 +7,5 @@ function y {
     }
     Remove-Item -Path $tmp
 }
+Import-Module Terminal-Icons
 Invoke-Expression (&starship init powershell)
