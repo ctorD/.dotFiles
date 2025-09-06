@@ -1,6 +1,7 @@
 <div align="center">
 
 # 🏠 .dotfiles  
+
 Windows DotFiles for .Net/Vue Development  
 Managed by [chezmoi](https://github.com/twpayne/chezmoi)
 
@@ -17,6 +18,7 @@ Managed by [chezmoi](https://github.com/twpayne/chezmoi)
 ## 🚀 Install Guide
 
 ### Install Powershell, Add Powershell terminal icons
+
 ```
 winget install --id Microsoft.PowerShell --source winget
 Install-Module -Name Terminal-Icons -Repository PSGallery -Force
@@ -33,9 +35,11 @@ irm get.scoop.sh | iex
 scoop install main/git
 scoop install main/mingw
 ```
+
 ### 2. Setup Git
 
 Generate SSH key, start ssh-agent, and configure Git:
+
 ```
 
 git config --global user.name "Your Name"
@@ -53,12 +57,15 @@ chezmoi init --apply https://github.com/ctorD/.dotFiles.git
 ```
 
 ### 4. Add Scoop Buckets
+
 ```powershell
 scoop bucket add extras
 scoop bucket add versions
 scoop bucket add nerd-fonts
 ```
+
 ### 5. Install Applications & Dev Tools
+
 ```powershell
 scoop install JetBrainsMono-NF
 scoop install nerd-fonts/JetBrains-Mono
@@ -79,9 +86,10 @@ scoop install gitextensions
 scoop install main/ripgrep
 scoop install ffmpeg 7zip jq poppler fd fzf zoxide resvg imagemagick
 scoop install yazi
-scoop install oh-my-posh
 ```
+
 ### 6. Setup Node.js and Quasar CLI (via nvm)
+
 ```powershell
 nvm install latest
 nvm use latest
@@ -102,10 +110,13 @@ Starship prompt configured in your dotfiles for a clean prompt experience.
 🛠️ Maintenance & Updates
 
 To update Scoop apps:
+
 ```powershell
 scoop update *
 ```
+
 To update dotfiles:
+
 ```powershell
 chezmoi update
 chezmoi apply
