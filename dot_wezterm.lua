@@ -1,5 +1,5 @@
 -- Pull in the wezterm API
-local wezterm = require 'wezterm'
+local wezterm = require("wezterm")
 
 -- This will hold the configuration.
 local config = wezterm.config_builder()
@@ -14,9 +14,8 @@ config.initial_rows = 60
 
 -- or, changing the font size and color scheme.
 config.font_size = 10
-config.color_scheme = 'catppuccin-macchiato'
-config.font = wezterm.font 'JetBrains Mono'
-
+config.color_scheme = "catppuccin-macchiato"
+config.font = wezterm.font("JetBrains Mono")
 
 -- Finally, return the configuration to wezterm:
 config.hide_tab_bar_if_only_one_tab = true
