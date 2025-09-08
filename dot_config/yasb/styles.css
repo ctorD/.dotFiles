@@ -727,3 +727,10 @@ Example: "Windows Media" becomes "windows-media" */
     border-radius: 4px;
     width: 20px;
 }
+
+
+.battery-widget .widget-container .icon {
+    color: var(--mauve);
+    margin-right: 4px;
+}
+
