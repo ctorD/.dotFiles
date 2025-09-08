@@ -5,6 +5,8 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.default_prog = { "pwsh.exe", "-NoLogo" }
+-- config.default_cwd = "C:\\Users\\DanielClarke\\Development"
+config.default_cwd = os.getenv("USERPROFILE") .. "\\Development"
 -- This is where you actually apply your config choices.
 
 -- For example, changing the initial geometry for new windows:
@@ -14,7 +16,7 @@ config.initial_rows = 1
 
 -- or, changing the font size and color scheme.
 config.font_size = 10
-config.color_scheme = "catppuccin-macchiato"
+config.color_scheme = "catppuccin-mocha"
 config.font = wezterm.font("JetBrains Mono")
 
 -- Finally, return the configuration to wezterm:
