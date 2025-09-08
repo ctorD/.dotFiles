@@ -74,6 +74,7 @@ scoop install extras/obsidian
 scoop install extras/jetbrains-toolbox
 scoop install extras/chrome
 scoop install extras/glazewm
+scoop install extras/yasb
 scoop install extras/flow-launcher
 scoop install extras/twinkle-tray
 scoop install extras/spotify
